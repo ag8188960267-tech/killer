@@ -76,7 +76,6 @@ h1{
     background:linear-gradient(45deg,#00c6ff,#0072ff,#00c6ff);
     color:#fff;
     font-weight:700;
-    text-decoration:none;
     font-size:1rem;
     border:none;
     cursor:pointer;
@@ -96,20 +95,49 @@ h1{
 }
 </style>
 
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '782894664340520');  // Tumhara Pixel ID
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=782894664340520&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
 <script>
 function goTelegram(){
-    document.getElementById("btn").innerText="Redirecting...";
-    setTimeout(()=>{
-        window.location.href="https://t.me/+hwdBZHcNc-JjOGZl";
+
+    // Subscribe Event on Button Click
+    fbq('track', 'Subscribe', {
+      value: 1,
+      currency: 'INR'
+    });
+
+    document.getElementById("btn").innerText = "Redirecting...";
+
+    setTimeout(function(){
+        window.location.href = "https://t.me/+hwdBZHcNc-JjOGZl";
     },3000);
 }
 </script>
-</head>
 
+</head>
 <body>
 
 <div class="container">
-    <img src="logo.jpg" class="logo">
+    <img src="logo.jpg" class="logo" alt="Logo">
 
     <h1>SILENT KILLER</h1>
     <p class="tagline">#1 Betting Source 🔥</p>
