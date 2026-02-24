@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SILENT KILLER</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1542751371-adc38448a05e");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+}
+
+.container{
+    width:90%;
+    max-width:400px;
+    background:rgba(255,255,255,0.08);
+    padding:25px;
+    border-radius:25px;
+    text-align:center;
+    backdrop-filter:blur(12px);
+    box-shadow:0 0 30px rgba(0,0,0,0.6);
+}
+
+.logo{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:3px solid #fff;
+    object-fit:cover;
+    margin-bottom:15px;
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+}
+
+h1{
+    font-size:2rem;
+    font-weight:800;
+    background:linear-gradient(to right,#fff,#ffd700,#fff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom:5px;
+}
+
+.tagline{
+    color:#00ffcc;
+    font-size:0.9rem;
+    letter-spacing:1px;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 35px;
+    border-radius:50px;
+    background:linear-gradient(45deg,#00c6ff,#0072ff,#00c6ff);
+    color:#fff;
+    font-weight:700;
+    text-decoration:none;
+    font-size:1rem;
+    border:none;
+    cursor:pointer;
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(0,198,255,.7);}
+    70%{box-shadow:0 0 0 15px rgba(0,198,255,0);}
+    100%{box-shadow:0 0 0 0 rgba(0,198,255,0);}
+}
+
+.footer{
+    margin-top:15px;
+    font-size:0.75rem;
+    opacity:0.8;
+}
+</style>
+
+<script>
+function goTelegram(){
+    document.getElementById("btn").innerText="Redirecting...";
+    setTimeout(()=>{
+        window.location.href="https://t.me/+hwdBZHcNc-JjOGZl";
+    },3000);
+}
+</script>
+</head>
+
+<body>
+
+<div class="container">
+    <img src="logo.jpg" class="logo">
+
+    <h1>SILENT KILLER</h1>
+    <p class="tagline">#1 Betting Source 🔥</p>
+
+    <button class="btn" id="btn" onclick="goTelegram()">JOIN TELEGRAM FREE</button>
+
+    <div class="footer">
+        Expert Analytics & Daily Wins 💹<br>
+        Join <b>10K+</b> members winning!
+    </div>
+</div>
+
+</body>
+</html>
